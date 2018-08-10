@@ -1,0 +1,32 @@
+{
+  "name": "lighthouse-benchmark",
+  "version": "0.0.1",
+  "description": "Tool for running lighthouse audits in bulk, identifying significant results across individual metrics",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha",
+    "lb": "node src/run-lighthouse.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthoffner/lighthouse-benchmark.git"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "chrome-launcher": "^0.10.2",
+    "lighthouse": "next",
+    "puppeteer": "^1.4.0"
+  },
+  "keywords": [
+    "lighthouse"
+  ],
+  "author": "Matt Hoffner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthoffner/lighthouse-benchmark/issues"
+  },
+  "homepage": "https://github.com/matthoffner/lighthouse-benchmark#readme"
+}
