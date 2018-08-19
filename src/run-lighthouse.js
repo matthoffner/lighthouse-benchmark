@@ -1,3 +1,4 @@
+require("@babel/register");
 const lighthouse = require('lighthouse');
 const chromeLauncher = require('chrome-launcher');
 const analyze = require('./analyze').default;
@@ -19,7 +20,7 @@ async function startLighthouse(url, flags) {
 }
 
 const flags = {
-    chromeFlags: ['--disable-gpu', '--headless', '--enable-logging', '--no-sandbox']
+    chromeFlags: ['--disable-gpu', '--headless', '--enable-logging']
 };
 
 async function lighthouseRunner(urls, label, abtest) {
@@ -54,12 +55,12 @@ async function lighthouseRunner(urls, label, abtest) {
 
 async function runAll(suites) {
     for (let suite of suites) {
-        await lighthouseRunner(suite.urls, suite.label);
+        lighthouseRunner(suite.urls, suite.label);
     }
 }
 
 async function run(suite, abtest) {
-    await lighthouseRunner(suite.urls, suite.label, abtest);
+    lighthouseRunner(suite.urls, suite.label, abtest);
 }
 
 function runLighthouse(argv) {

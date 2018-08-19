@@ -12,6 +12,10 @@
     "url": "git+https://github.com/matthoffner/lighthouse-benchmark.git"
   },
   "devDependencies": {
+    "@babel/cli": "^7.0.0-rc.1",
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "@babel/register": "^7.0.0-rc.1",
     "chai": "^4.1.2",
     "mocha": "^3.2.0"
   },
