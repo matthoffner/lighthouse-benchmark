@@ -1,8 +1,11 @@
 {
   "name": "lighthouse-benchmark",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tool for running lighthouse audits in bulk, identifying significant results across individual metrics",
   "main": "src/index.js",
+  "bin": {
+    "lb": "./src/run-lighthouse.js"
+  },
   "scripts": {
     "test": "mocha",
     "lb": "node src/run-lighthouse.js"

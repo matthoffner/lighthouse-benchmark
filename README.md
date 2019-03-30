@@ -2,23 +2,22 @@
 
 A simple node.js utility for running multiple Lighthouse tests. Allows for benchmarking and comparing two urls, identifying significant differences across key performance metrics.
 
-
 ```
-yarn add lighthouse-benchmark
-```
-
-```
-yarn lb url
+npm install lighthouse-benchmark -g
 ```
 
 ```
-yarn lb url n
+lb url
 ```
 
 ```
-yarn lb urlA urlB n
+lb url n
 ```
 
 ```
-yarn lb config
+lb urlA urlB n
+```
+
+```
+lb config
 ```
