@@ -1,6 +1,6 @@
 {
   "name": "lighthouse-benchmark",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Tool for running lighthouse audits in bulk, identifying significant results across individual metrics",
   "main": "src/index.js",
   "bin": {
@@ -15,20 +15,21 @@
     "url": "git+https://github.com/matthoffner/lighthouse-benchmark.git"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-rc.1",
-    "@babel/core": "^7.0.0-rc.1",
-    "@babel/preset-env": "^7.0.0-rc.1",
-    "@babel/register": "^7.0.0-rc.1",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/register": "^7.0.0",
     "chai": "^4.1.2",
     "mocha": "^3.2.0"
   },
   "dependencies": {
-    "chrome-launcher": "^0.10.2",
-    "lighthouse": "next",
-    "puppeteer": "^1.4.0"
+    "lighthouse": "^5.0.0",
+    "puppeteer": "^1.0.0"
   },
   "keywords": [
-    "lighthouse"
+    "lighthouse",
+    "benchmark",
+    "performance"
   ],
   "author": "Matt Hoffner",
   "license": "ISC",

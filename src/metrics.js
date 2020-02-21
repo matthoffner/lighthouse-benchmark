@@ -5,5 +5,7 @@ export const PERF_METRICS = [
     'speed-index',
     'interactive',
     'first-cpu-idle',
-    'estimated-input-latency'
+    'estimated-input-latency',
+    'max-potential-fid',
+    'main-thread-tasks'
 ];
