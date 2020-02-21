@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "lighthouse": "^5.0.0",
-    "puppeteer": "^1.0.0"
+    "puppeteer": "^2.0.0"
   },
   "keywords": [
     "lighthouse",
